@@ -8,9 +8,8 @@ public class ReverseEachWordOfString {
         else {
             String [] arr = s.split(" ");
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < arr.length; i++)
-            {
-                sb.append(reverse(arr[i]));
+            for (String string : arr) {
+                sb.append(reverse(string));
                 sb.append(" ");
             }
             return sb.toString();
